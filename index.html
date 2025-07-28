@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vision Institute of Science offers personalized learning for K-12 and competitive exams like NEET/JEE.">
+    <meta name="keywords" content="education, online learning, NEET, JEE, science, VIS">
+    <meta name="author" content="Vision Institute of Science">
+    <title>VIS - Vision Institute of Science</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="logo.png" alt="VIS Logo" class="nav-logo">
+            <div>
+                <h2>Vision Institute of Science</h2>
+                <p class="tagline"><i>Learn with Confidence</i></p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#courses" class="nav-item">Courses</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#contact" class="nav-item">Contact</a>
+            <a href="#join" class="nav-item">Join</a>
+
+        </div>
+        <button class="theme-toggle">Toggle Theme</button>
+        <div class="nav-toggle">
+            <span class="hamburger"></span>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="content home-section">
+        <div class="smoke-container">
+            <h1 class="typing-text" id="typed-text"></h1>
+            <p class="blink subtitle-blink">Your Journey to Excellence Starts Here</p>
+            <div class="home-cta">
+                <a href="#courses" class="cta-button blink explore-blink">Explore Courses</a>
+                <a href="#join" class="cta-button blink join-blink">Join Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcement Section -->
+    <section id="announcement" class="content announcement-section">
+        <button class="announcement-btn" onclick="toggleAnnouncement()">
+            <span class="speaker-icon">🔊</span> Announcements
+        </button>
+        <div class="announcement-cards" id="announcement-cards" style="display: none;">
+            <div class="announcement-card" onclick="showImage('b1.png')">
+                <img src="b1.png" alt="Result 1" class="card-image">
+                <p class="congrat-message">
+                    Congratulations from VIS! Your hard work and dedication have paid off with this outstanding result.
+                    We are overwhelmed with pride to see you soar to new heights, inspiring countless others with your
+                    success in SAC HAC. Your journey is a testament to perseverance and passion—keep shining!
+                </p>
+            </div>
+            <div class="announcement-card" onclick="showImage('b2.png')">
+                <img src="b2.png" alt="Result 2" class="card-image">
+                <p class="congrat-message">
+                    Congratulations from VIS! Your relentless effort has blossomed into this incredible achievement. We
+                    celebrate your triumph in SAC HAC, a moment that fills our hearts with joy and pride. Your story
+                    motivates every student—continue to inspire with your brilliance!
+                </p>
+            </div>
+            <div class="announcement-card" onclick="showImage('b3.png')">
+                <img src="b3.png" alt="Result 3" class="card-image">
+                <p class="congrat-message">
+                    Congratulations from VIS! This result is a shining example of your unwavering determination. Your
+                    success in SAC HAC brings tears of joy to our eyes, and we are honored to be part of your journey.
+                    Keep illuminating the path for others with your remarkable spirit!
+                </p>
+            </div>
+            <div class="announcement-card" onclick="showImage('b4.png')">
+                <img src="b4.png" alt="Result 4" class="card-image">
+                <p class="congrat-message">
+                    Congratulations from VIS! Your extraordinary result in SAC HAC is a beacon of hope and inspiration.
+                    We are deeply moved by your dedication, and this success story will echo in the hearts of all at
+                    VIS. Continue to chase your dreams with this unstoppable momentum!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="content">
+        <div class="course-container">
+            <div class="course-card">
+                <h3>NEET/JEE Organic Chemistry</h3>
+                <p>Comprehensive preparation for competitive exams with expert guidance.</p>
+                <button class="readmore-btn" onclick="showPopup('organic')">Know More</button>
+            </div>
+            <div class="course-card">
+                <h3>12/11 Chemistry & Bio Classes</h3>
+                <p>Focused classes for CBSE/ICSE students with practical learning.</p>
+                <button class="readmore-btn" onclick="showPopup('bio')">Know More</button>
+            </div>
+            <div class="course-card">
+                <h3>10/9 Foundation of Science</h3>
+                <p>Strong foundation for young learners with interactive sessions.</p>
+                <button class="readmore-btn" onclick="showPopup('foundation')">Know More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <div id="popup-text"></div>
+            <button class="join-btn" onclick="document.getElementById('join').scrollIntoView()">Join Now</button>
+        </div>
+    </div>
+
+    <!-- Image Popup -->
+    <div id="image-popup" class="popup" style="display: none;">
+        <div class="popup-content image-popup-content">
+            <span class="close-btn" onclick="hideImagePopup()">&times;</span>
+            <img id="popup-image" src="" alt="Full Image" class="full-image">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="content">
+        <h2>About Us</h2>
+        <p>Vision Institute of Science is India's leading ed-tech innovator, launched in 2016, offering tailored
+            learning programs for K-12 and competitive exams like NEET and JEE. With 60 million registered students, we
+            aim to inspire global education.</p>
+        <h3>What Makes Us Different?</h3>
+        <h4>Personalized Learning</h4>
+        <p>We create unique learning paths for every student, blending top educators and technology for an engaging
+            experience.</h3>
+        <h3>Why Choose Us?</h3>
+        <p>We empower students to thrive in the digital era, fostering curiosity and lifelong learning with innovative
+            methods.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content">
+        <h2>Contact Us</h2>
+        <p>Contact: Mr. Mohammad Sultan - you can connect via example@gmail.com</p>
+        <form id="contactForm">
+            
+
+            <label for="cname">Your Name *</label>
+            <input type="text" id="cname" name="name" required>
+
+            <label for="cemail">Email Address *</label>
+            <input type="email" id="cemail" name="email" required>
+
+            <label for="cmobile">Mobile Number (Optional)</label>
+            <input type="tel" id="cmobile" name="mobile">
+
+            <label for="cmessage">Message *</label>
+            <textarea id="cmessage" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <div class="response" id="contactResponse"></div>
+        </form>
+
+
+        <!-- Message box -->
+        <div id="response-msg" style="display:none; color: limegreen; font-weight: bold; margin-top: 10px;"></div>
+        >
+
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="content">
+        <h2>Join Us</h2>
+        <form id="joinForm">
+            <h2>Join Vision Institute</h2>
+
+            <label for="jname">Full Name *</label>
+            <input type="text" id="jname" name="name" required>
+
+            <label for="jsurname">Surname *</label>
+            <input type="text" id="jsurname" name="surname" required>
+
+            <label for="jfather">Father's Name *</label>
+            <input type="text" id="jfather" name="fatherName" required>
+
+            <label for="jmobile">Mobile Number (Optional)</label>
+            <input type="tel" id="jmobile" name="mobile">
+
+            <label for="jemail">Email Address *</label>
+            <input type="email" id="jemail" name="email" required>
+
+            <label for="jaddress">Home Address *</label>
+            <textarea id="jaddress" name="address" rows="3" required></textarea>
+
+            <button type="submit">Submit</button>
+            <div class="response" id="joinResponse"></div>
+        </form>
+
+
+
+
+        <!-- Payment Options -->
+        <div class="payment-section">
+            <h3>Payment</h3>
+            <p>VIS offers you multiple payment methods. Payment gateway partners use secure encryption technology to
+                keep your transaction details confidential at all times. You may use Internet Banking, Wallet, and QR
+                Support to make your purchase.</p>
+            <div class="payment-options">
+                <div class="payment-logo">Google Pay</div>
+                <div class="payment-logo">PhonePe</div>
+                <div class="payment-logo">Paytm</div>
+                <div class="payment-logo">Net Banking</div>
+                <div class="payment-logo">BHIM</div>
+            </div>
+        </div>
+        <!-- Disclaimer and Privacy Policy -->
+        <div class="footer-links">
+            <a href="#" class="footer-link" onclick="showMessage('disclaimer')">Disclaimer</a> |
+            <a href="#" class="footer-link" onclick="showMessage('privacy')">Privacy Policy</a> |
+            <a href="#" class="footer-link">Terms of Services</a> |
+            <a href="join.html" target="_blank">Join Now</a>
+
+        </div>
+    </section>
+
+    <!-- Message Popup -->
+    <div id="message-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hideMessage()">&times;</span>
+            <div id="message-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function handleForm(formId, endpoint, responseId) {
+            document.getElementById(formId).addEventListener("submit", function (e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+
+                fetch(endpoint, {
+                    method: "POST",
+                    body: formData,
+                    headers: { Accept: "application/json" }
+                })
+                    .then(res => {
+                        if (res.ok) {
+                            document.getElementById(responseId).innerText = "Thanks for connecting us! We will get back to you soon.";
+                            this.reset();
+                        } else {
+                            document.getElementById(responseId).innerText = "Something went wrong. Please try again.";
+                        }
+                    })
+                    .catch(() => {
+                        document.getElementById(responseId).innerText = "Error submitting form.";
+                    });
+            });
+        }
+
+        handleForm("joinForm", "https://formspree.io/f/xgvzyakv", "joinResponse");
+        handleForm("contactForm", "https://formspree.io/f/xgvzyakv", "contactResponse");
+    </script>
+
+</body>
+
+
+</html>
