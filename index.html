@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Institute of Science</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="logo.png" alt="VIS Logo" class="logo">
+                <div class="institute-info">
+                    <h1>Vision Institute of Science</h1>
+                    <p><i>Learn with Confidence</i></p>
+                </div>
+            </div>
+            <div class="nav-controls">
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <a href="#" class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="courses">Courses</a></li>
+                <li><a href="#" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+                <li><a href="#" class="nav-link" data-section="join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Home Section -->
+        <div id="home" class="section active">
+            <h2 class="welcome-text" id="typing-text"></h2>
+            <button class="announcement-btn" onclick="showAnnouncements()"
+                aria-label="Show Announcements">Announcements</button>
+            <div class="announcement" id="announcement-section" style="display: none;">
+                <h3><i class="fas fa-bullhorn"></i> Our Top Achievers</h3>
+                <div class="announcement-cards">
+                    <div class="ann-card" data-image="b1.png">
+                        <img src="b1.png" alt="Topper 1">
+                        <p>🎉 Congratulations to All Our Star Performers! 🌟
+
+                            We are incredibly proud of the outstanding results achieved by our brilliant students at
+                            Vision Institute of Biology! Your dedication, hard work, and focus have led to exceptional
+                            success — with many scoring above 90% and setting inspiring academic benchmarks. 📚</p>
+                    </div>
+                    <div class="ann-card" data-image="b2.png">
+                        <img src="b2.png" alt="Topper 2">
+                        <p>🎉 Heartiest Congratulations to Our SSC Achievers! 🌟
+
+                            We are proud to celebrate the brilliant performance of our SSC Science students at Vision
+                            Institute of Biology! Your dedication, effort, and trust in our guidance have paid off
+                            beautifully. 🌿📘</p>
+                    </div>
+                    <div class="ann-card" data-image="b3.png">
+                        <img src="b3.png" alt="Topper 3">
+                        <p>🎉 Heartfelt Congratulations to Our HSC 2024 Achievers! 🎉
+
+                            We are proud to celebrate the dedication and excellence of our brilliant students at Vision
+                            Institute of Biology..</p>
+                    </div>
+                    <div class="ann-card" data-image="b4.png">
+                        <img src="b4.png" alt="Topper 4">
+                        <p>Congratulations on your phenomenal success in SAC-HSC!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Courses Section -->
+        <div id="courses" class="section">
+            <h2>Our Courses</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>NEET/JEE Organic Chemistry</h3>
+                    <p>Comprehensive course covering organic chemistry for NEET and JEE aspirants.</p>
+                    <button data-section="neet-jee-overview">Know More</button>
+                </div>
+                <div class="card">
+                    <h3>Class 11 & 12 Chemistry & Biology</h3>
+                    <p>Structured classes for Maharashtra State Board Chemistry and Biology.</p>
+                    <button data-section="class-11-12-overview">Know More</button>
+                </div>
+                <div class="card">
+                    <h3>Class 9 & 10 Foundation of Science</h3>
+                    <p>Foundation course for science to build a strong base.</p>
+                    <button data-section="class-9-10-overview">Know More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEET/JEE Organic Chemistry Overview -->
+        <div id="neet-jee-overview" class="section">
+            <h2>NEET/JEE Organic Chemistry Overview</h2>
+            <button class="back-btn" data-section="courses">Back to Courses</button>
+            <p>Master organic chemistry with our expert-led course designed for NEET and JEE aspirants. Select a class
+                to explore chapters.</p>
+            <div class="card-container">
+                <div class="card" data-section="class-11-neet-chemistry">
+                    <h3>Class 11 NEET Chemistry</h3>
+                    <p>Explore Class 11 NEET Chemistry chapters</p>
+                </div>
+                <div class="card" data-section="class-12-neet-chemistry">
+                    <h3>Class 12 NEET Chemistry</h3>
+                    <p>Explore Class 12 NEET Chemistry chapters</p>
+                </div>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 11 NEET Chemistry Chapters -->
+        <div id="class-11-neet-chemistry" class="section">
+            <h2>Class 11 NEET Chemistry Chapters</h2>
+            <button class="back-btn" data-section="neet-jee-overview">Back</button>
+            <div class="chapter-list">
+                <h3>Physical Chemistry</h3>
+                <ul>
+                    <li data-section="chapter-11-neet-chem-1">Some Basic Concepts of Chemistry</li>
+                    <li data-section="chapter-11-neet-chem-2">Structure of Atom</li>
+                    <li data-section="chapter-11-neet-chem-3">Classification of Elements and Periodicity in Properties
+                    </li>
+                    <li data-section="chapter-11-neet-chem-4">Chemical Bonding and Molecular Structure</li>
+                    <li data-section="chapter-11-neet-chem-5">States of Matter</li>
+                    <li data-section="chapter-11-neet-chem-6">Thermodynamics</li>
+                    <li data-section="chapter-11-neet-chem-7">Equilibrium</li>
+                    <li data-section="chapter-11-neet-chem-8">Redox Reactions</li>
+                </ul>
+                <h3>Inorganic Chemistry</h3>
+                <ul>
+                    <li data-section="chapter-11-neet-chem-9">Hydrogen</li>
+                    <li data-section="chapter-11-neet-chem-10">s-Block Elements</li>
+                    <li data-section="chapter-11-neet-chem-11">p-Block Elements</li>
+                </ul>
+                <h3>Organic Chemistry</h3>
+                <ul>
+                    <li data-section="chapter-11-neet-chem-12">Organic Chemistry: Some Basic Principles and Techniques
+                    </li>
+                    <li data-section="chapter-11-neet-chem-13">Hydrocarbons</li>
+                </ul>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 12 NEET Chemistry Chapters -->
+        <div id="class-12-neet-chemistry" class="section">
+            <h2>Class 12 NEET Chemistry Chapters</h2>
+            <button class="back-btn" data-section="neet-jee-overview">Back</button>
+            <div class="chapter-list">
+                <h3>Physical Chemistry</h3>
+                <ul>
+                    <li data-section="chapter-12-neet-chem-1">Solutions</li>
+                    <li data-section="chapter-12-neet-chem-2">Electrochemistry</li>
+                    <li data-section="chapter-12-neet-chem-3">Chemical Kinetics</li>
+                </ul>
+                <h3>Inorganic Chemistry</h3>
+                <ul>
+                    <li data-section="chapter-12-neet-chem-4">The d & f Block Elements</li>
+                    <li data-section="chapter-12-neet-chem-5">Coordination Compounds</li>
+                </ul>
+                <h3>Organic Chemistry</h3>
+                <ul>
+                    <li data-section="chapter-12-neet-chem-6">Haloalkanes and Haloarenes</li>
+                    <li data-section="chapter-12-neet-chem-7">Alcohols, Phenols and Ethers</li>
+                    <li data-section="chapter-12-neet-chem-8">Aldehydes, Ketones and Carboxylic Acids</li>
+                    <li data-section="chapter-12-neet-chem-9">Amines</li>
+                    <li data-section="chapter-12-neet-chem-10">Biomolecules</li>
+                </ul>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 11 NEET Chemistry Chapter Overviews -->
+        <div id="chapter-11-neet-chem-1" class="section">
+            <h2>Some Basic Concepts of Chemistry</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Understand the fundamental concepts of chemistry, including matter, its classification, laws of
+                    chemical combinations, and mole concept. Learn to solve numerical problems related to stoichiometry
+                    and concentration terms.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-2" class="section">
+            <h2>Structure of Atom</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Explore atomic models, subatomic particles, and quantum numbers. Study Bohr’s model, quantum
+                    mechanical model, and electronic configuration of elements.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-3" class="section">
+            <h2>Classification of Elements and Periodicity in Properties</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Learn about the periodic table, periodic trends in properties like atomic radius, ionization energy,
+                    and electronegativity. Understand the significance of periodic classification.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-4" class="section">
+            <h2>Chemical Bonding and Molecular Structure</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Study types of chemical bonds, VSEPR theory, valence bond theory, and molecular orbital theory.
+                    Understand hybridization, bond parameters, and intermolecular forces.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-5" class="section">
+            <h2>States of Matter</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Explore the properties of gases, liquids, and solids. Learn gas laws, kinetic theory of gases, and
+                    intermolecular interactions affecting states of matter.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-6" class="section">
+            <h2>Thermodynamics</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Understand thermodynamic terms, laws of thermodynamics, and their applications in chemical processes.
+                    Study enthalpy, entropy, and Gibbs free energy.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-7" class="section">
+            <h2>Equilibrium</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Learn about chemical and ionic equilibrium, Le Chatelier’s principle, equilibrium constants, and
+                    acid-base concepts. Solve problems related to pH and buffer solutions.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-8" class="section">
+            <h2>Redox Reactions</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Study oxidation and reduction processes, balancing redox reactions, and calculating oxidation
+                    numbers. Understand electrochemical cells and their applications.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-9" class="section">
+            <h2>Hydrogen</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Explore the properties, preparation, and uses of hydrogen. Study hydrides, water, heavy water, and
+                    hydrogen peroxide.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-10" class="section">
+            <h2>s-Block Elements</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Learn about the properties, preparation, and compounds of alkali and alkaline earth metals.
+                    Understand their biological significance and chemical reactivity.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-11" class="section">
+            <h2>p-Block Elements</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Study the properties and compounds of p-block elements, focusing on groups 13 and 14. Explore their
+                    trends in physical and chemical properties.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-12" class="section">
+            <h2>Organic Chemistry: Some Basic Principles and Techniques</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Understand the basics of organic chemistry, including nomenclature, isomerism, and purification
+                    techniques. Learn about reaction mechanisms and functional groups.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-neet-chem-13" class="section">
+            <h2>Hydrocarbons</h2>
+            <button class="back-btn" data-section="class-11-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Explore the classification, preparation, and reactions of alkanes, alkenes, alkynes, and aromatic
+                    hydrocarbons. Study their properties and applications.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+
+        <!-- Class 12 NEET Chemistry Chapter Overviews -->
+        <div id="chapter-12-neet-chem-1" class="section">
+            <h2>Solutions</h2>
+            <button class="back-btn" data-section="class-12-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Study types of solutions, concentration terms, colligative properties, and Raoult’s law. Learn to
+                    solve numerical problems related to solutions.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-neet-chem-2" class="section">
+            <h2>Electrochemistry</h2>
+            <button class="back-btn" data-section="class-12-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Understand electrochemical cells, Nernst equation, and conductance in electrolytic solutions. Study
+                    batteries, fuel cells, and corrosion.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-neet-chem-3" class="section">
+            <h2>Chemical Kinetics</h2>
+            <button class="back-btn" data-section="class-12-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Learn about the rate of reactions, factors affecting reaction rates, and rate laws. Study order,
+                    molecularity, and integrated rate equations.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-neet-chem-4" class="section">
+            <h2>The d & f Block Elements</h2>
+            <button class="back-btn" data-section="class-12-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Explore the properties, electronic configuration, and compounds of transition and inner transition
+                    elements. Study their applications and chemical behavior.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-neet-chem-5" class="section">
+            <h2>Coordination Compounds</h2>
+            <button class="back-btn" data-section="class-12-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Understand the structure, nomenclature, and bonding in coordination compounds. Study isomerism,
+                    valence bond theory, and crystal field theory.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-neet-chem-6" class="section">
+            <h2>Haloalkanes and Haloarenes</h2>
+            <button class="back-btn" data-section="class-12-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Learn about the preparation, properties, and reactions of haloalkanes and haloarenes. Study
+                    nucleophilic substitution and elimination reactions.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-neet-chem-7" class="section">
+            <h2>Alcohols, Phenols and Ethers</h2>
+            <button class="back-btn" data-section="class-12-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Study the nomenclature, preparation, and reactions of alcohols, phenols, and ethers. Understand their
+                    physical properties and chemical reactivity.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-neet-chem-8" class="section">
+            <h2>Aldehydes, Ketones and Carboxylic Acids</h2>
+            <button class="back-btn" data-section="class-12-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Explore the preparation, properties, and reactions of aldehydes, ketones, and carboxylic acids. Study
+                    nucleophilic addition and oxidation reactions.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-neet-chem-9" class="section">
+            <h2>Amines</h2>
+            <button class="back-btn" data-section="class-12-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Learn about the classification, preparation, and reactions of amines. Study their basicity, diazonium
+                    salts, and applications in organic synthesis.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-neet-chem-10" class="section">
+            <h2>Biomolecules</h2>
+            <button class="back-btn" data-section="class-12-neet-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Understand the structure and functions of carbohydrates, proteins, nucleic acids, and lipids. Study
+                    enzymes and their role in biological processes.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+
+        <!-- Class 11 & 12 Overview -->
+        <div id="class-11-12-overview" class="section">
+            <h2>Class 11 & 12 Chemistry & Biology Overview</h2>
+            <button class="back-btn" data-section="courses">Back to Courses</button>
+            <p>Comprehensive classes covering Maharashtra State Board syllabus for Chemistry and Biology.</p>
+            <div class="card-container">
+                <div class="card" data-section="class-12-subjects">
+                    <h3>Class 12</h3>
+                    <p>Explore Chemistry and Biology chapters</p>
+                </div>
+                <div class="card" data-section="class-11-subjects">
+                    <h3>Class 11</h3>
+                    <p>Explore Chemistry and Biology chapters</p>
+                </div>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 12 Subjects -->
+        <div id="class-12-subjects" class="section">
+            <h2>Class 12 Subjects</h2>
+            <button class="back-btn" data-section="class-11-12-overview">Back</button>
+            <div class="card-container">
+                <div class="card" data-section="class-12-chemistry">
+                    <h3>Chemistry</h3>
+                    <p>Class 12 Chemistry chapters</p>
+                </div>
+                <div class="card" data-section="class-12-biology">
+                    <h3>Biology</h3>
+                    <p>Class 12 Biology chapters</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Class 11 Subjects -->
+        <div id="class-11-subjects" class="section">
+            <h2>Class 11 Subjects</h2>
+            <button class="back-btn" data-section="class-11-12-overview">Back</button>
+            <div class="card-container">
+                <div class="card" data-section="class-11-chemistry">
+                    <h3>Chemistry</h3>
+                    <p>Class 11 Chemistry chapters</p>
+                </div>
+                <div class="card" data-section="class-11-biology">
+                    <h3>Biology</h3>
+                    <p>Class 11 Biology chapters</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Class 12 Chemistry Chapters -->
+        <div id="class-12-chemistry" class="section">
+            <h2>Class 12 Chemistry Chapters</h2>
+            <button class="back-btn" data-section="class-12-subjects">Back</button>
+            <div class="chapter-list">
+                <ul>
+                    <li data-section="chapter-12-chem-1">Solid State</li>
+                    <li data-section="chapter-12-chem-2">Solutions</li>
+                    <li data-section="chapter-12-chem-3">Electrochemistry</li>
+                    <li data-section="chapter-12-chem-4">Chemical Kinetics</li>
+                    <li data-section="chapter-12-chem-5">Surface Chemistry</li>
+                    <li data-section="chapter-12-chem-6">General Principles and Processes of Isolation of Elements</li>
+                    <li data-section="chapter-12-chem-7">p-Block Elements</li>
+                    <li data-section="chapter-12-chem-8">d- and f-Block Elements</li>
+                    <li data-section="chapter-12-chem-9">Coordination Compounds</li>
+                    <li data-section="chapter-12-chem-10">Haloalkanes and Haloarenes</li>
+                    <li data-section="chapter-12-chem-11">Alcohols, Phenols, and Ethers</li>
+                    <li data-section="chapter-12-chem-12">Aldehydes, Ketones, and Carboxylic Acids</li>
+                    <li data-section="chapter-12-chem-13">Amines</li>
+                    <li data-section="chapter-12-chem-14">Biomolecules</li>
+                    <li data-section="chapter-12-chem-15">Polymers</li>
+                    <li data-section="chapter-12-chem-16">Chemistry in Everyday Life</li>
+                </ul>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 12 Biology Chapters -->
+        <div id="class-12-biology" class="section">
+            <h2>Class 12 Biology Chapters</h2>
+            <button class="back-btn" data-section="class-12-subjects">Back</button>
+            <div class="chapter-list">
+                <ul>
+                    <li data-section="chapter-12-bio-1">Reproduction in Lower and Higher Plants</li>
+                    <li data-section="chapter-12-bio-2">Reproduction in Lower and Higher Animals</li>
+                    <li data-section="chapter-12-bio-3">Inheritance and Variation</li>
+                    <li data-section="chapter-12-bio-4">Molecular Basis of Inheritance</li>
+                    <li data-section="chapter-12-bio-5">Origin and Evolution of Life</li>
+                    <li data-section="chapter-12-bio-6">Plant Water Relation</li>
+                    <li data-section="chapter-12-bio-7">Plant Growth and Mineral Nutrition</li>
+                    <li data-section="chapter-12-bio-8">Respiration and Circulation</li>
+                    <li data-section="chapter-12-bio-9">Control and Coordination</li>
+                    <li data-section="chapter-12-bio-10">Human Health and Diseases</li>
+                    <li data-section="chapter-12-bio-11">Enhancement of Food Production</li>
+                    <li data-section="chapter-12-bio-12">Biotechnology</li>
+                    <li data-section="chapter-12-bio-13">Organisms and Populations</li>
+                    <li data-section="chapter-12-bio-14">Ecosystems and Energy Flow</li>
+                    <li data-section="chapter-12-bio-15">Biodiversity, Conservation and Environmental Issues</li>
+                </ul>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 11 Chemistry Chapters -->
+        <div id="class-11-chemistry" class="section">
+            <h2>Class 11 Chemistry Chapters</h2>
+            <button class="back-btn" data-section="class-11-subjects">Back</button>
+            <div class="chapter-list">
+                <ul>
+                    <li data-section="chapter-11-chem-1">Some Basic Concepts of Chemistry</li>
+                    <li data-section="chapter-11-chem-2">Structure of Atom</li>
+                    <li data-section="chapter-11-chem-3">Classification of Elements and Periodicity in Properties</li>
+                    <li data-section="chapter-11-chem-4">Chemical Bonding and Molecular Structure</li>
+                    <li data-section="chapter-11-chem-5">States of Matter</li>
+                    <li data-section="chapter-11-chem-6">Thermodynamics</li>
+                    <li data-section="chapter-11-chem-7">Equilibrium</li>
+                    <li data-section="chapter-11-chem-8">Redox Reactions</li>
+                    <li data-section="chapter-11-chem-9">Hydrogen</li>
+                    <li data-section="chapter-11-chem-10">s-Block Elements</li>
+                    <li data-section="chapter-11-chem-11">p-Block Elements</li>
+                    <li data-section="chapter-11-chem-12">Organic Chemistry: Some Basic Principles and Techniques</li>
+                    <li data-section="chapter-11-chem-13">Hydrocarbons</li>
+                    <li data-section="chapter-11-chem-14">Environmental Chemistry</li>
+                </ul>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 11 Biology Chapters -->
+        <div id="class-11-biology" class="section">
+            <h2>Class 11 Biology Chapters</h2>
+            <button class="back-btn" data-section="class-11-subjects">Back</button>
+            <div class="chapter-list">
+                <ul>
+                    <li data-section="chapter-11-bio-1">The Living World</li>
+                    <li data-section="chapter-11-bio-2">Biological Classification</li>
+                    <li data-section="chapter-11-bio-3">Plant Kingdom</li>
+                    <li data-section="chapter-11-bio-4">Animal Kingdom</li>
+                    <li data-section="chapter-11-bio-5">Morphology of Flowering Plants</li>
+                    <li data-section="chapter-11-bio-6">Anatomy of Flowering Plants</li>
+                    <li data-section="chapter-11-bio-7">Structural Organisation in Animals</li>
+                    <li data-section="chapter-11-bio-8">Cell: The Unit of Life</li>
+                    <li data-section="chapter-11-bio-9">Biomolecules</li>
+                    <li data-section="chapter-11-bio-10">Cell Cycle and Cell Division</li>
+                    <li data-section="chapter-11-bio-11">Transport in Plants</li>
+                    <li data-section="chapter-11-bio-12">Mineral Nutrition</li>
+                    <li data-section="chapter-11-bio-13">Photosynthesis in Higher Plants</li>
+                    <li data-section="chapter-11-bio-14">Respiration in Plants</li>
+                    <li data-section="chapter-11-bio-15">Plant Growth and Development</li>
+                    <li data-section="chapter-11-bio-16">Digestion and Absorption</li>
+                    <li data-section="chapter-11-bio-17">Breathing and Exchange of Gases</li>
+                    <li data-section="chapter-11-bio-18">Body Fluids and Circulation</li>
+                    <li data-section="chapter-11-bio-19">Excretory Products and their Elimination</li>
+                    <li data-section="chapter-11-bio-20">Locomotion and Movement</li>
+                    <li data-section="chapter-11-bio-21">Neural Control and Coordination</li>
+                    <li data-section="chapter-11-bio-22">Chemical Coordination and Integration</li>
+                </ul>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 9 & 10 Overview -->
+        <div id="class-9-10-overview" class="section">
+            <h2>Class 9 & 10 Foundation of Science Overview</h2>
+            <button class="back-btn" data-section="courses">Back to Courses</button>
+            <p>Build a strong foundation in science with our engaging course for Class 9 & 10 students. Covers physics,
+                chemistry, and biology fundamentals. Select a class to explore chapters.</p>
+            <div class="card-container">
+                <div class="card" data-section="class-10-science">
+                    <h3>Class 10</h3>
+                    <p>Explore Class 10 Science chapters</p>
+                </div>
+                <div class="card" data-section="class-9-science">
+                    <h3>Class 9</h3>
+                    <p>Explore Class 9 Science chapters</p>
+                </div>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 10 Science Overview -->
+        <div id="class-10-science" class="section">
+            <h2>Class 10 Science Overview</h2>
+            <button class="back-btn" data-section="class-9-10-overview">Back</button>
+            <p>Comprehensive science course for Class 10, divided into Part 1 and Part 2. Select a part to explore
+                chapters.</p>
+            <div class="card-container">
+                <div class="card" data-section="class-10-science-part1">
+                    <h3>Science Part 1</h3>
+                    <p>Explore Class 10 Science Part 1 chapters</p>
+                </div>
+                <div class="card" data-section="class-10-science-part2">
+                    <h3>Science Part 2</h3>
+                    <p>Explore Class 10 Science Part 2 chapters</p>
+                </div>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 10 Science Part 1 Chapters -->
+        <div id="class-10-science-part1" class="section">
+            <h2>Class 10 Science Part 1 Chapters</h2>
+            <button class="back-btn" data-section="class-10-science">Back</button>
+            <div class="chapter-list">
+                <ul>
+                    <li data-section="chapter-10-part1-1">Gravitation</li>
+                    <li data-section="chapter-10-part1-2">Periodic Classification of Elements</li>
+                    <li data-section="chapter-10-part1-3">Chemical Reactions and Equations</li>
+                    <li data-section="chapter-10-part1-4">Effects of Electric Current</li>
+                    <li data-section="chapter-10-part1-5">Heat</li>
+                </ul>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 10 Science Part 2 Chapters -->
+        <div id="class-10-science-part2" class="section">
+            <h2>Class 10 Science Part 2 Chapters</h2>
+            <button class="back-btn" data-section="class-10-science">Back</button>
+            <div class="chapter-list">
+                <ul>
+                    <li data-section="chapter-10-part2-1">Heredity and Evolution</li>
+                    <li data-section="chapter-10-part2-2">Life Processes</li>
+                    <li data-section="chapter-10-part2-3">Natural Phenomena</li>
+                    <li data-section="chapter-10-part2-4">Environmental Management</li>
+                    <li data-section="chapter-10-part2-5">Metals</li>
+                    <li data-section="chapter-10-part2-6">Carbon Compounds</li>
+                </ul>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Class 9 Science Chapters -->
+        <div id="class-9-science" class="section">
+            <h2>Class 9 Science Chapters</h2>
+            <button class="back-btn" data-section="class-9-10-overview">Back</button>
+            <div class="chapter-list">
+                <ul>
+                    <li data-section="chapter-9-1">Laws of Motion and Force</li>
+                    <li data-section="chapter-9-2">Work, Power and Energy</li>
+                    <li data-section="chapter-9-3">Current Electricity and Magnetism</li>
+                    <li data-section="chapter-9-4">Measurement and Experimentation</li>
+                    <li data-section="chapter-9-5">Light and Sound</li>
+                    <li data-section="chapter-9-6">Properties of Substances</li>
+                    <li data-section="chapter-9-7">Substances in Daily Life</li>
+                    <li data-section="chapter-9-8">Life Processes in Living Organisms - Part 1</li>
+                    <li data-section="chapter-9-9">Life Processes in Living Organisms - Part 2</li>
+                    <li data-section="chapter-9-10">Heredity and Variation</li>
+                    <li data-section="chapter-9-11">Introduction to Environment</li>
+                    <li data-section="chapter-9-12">Observation in Daily Life</li>
+                    <li data-section="chapter-9-13">Information Communication Technology</li>
+                </ul>
+            </div>
+            <button class="join-btn" data-section="join">Join Now</button>
+        </div>
+
+        <!-- Chapter Overviews -->
+        <!-- Class 9 Science Chapter 1 -->
+        <div id="chapter-9-1" class="section">
+            <h2>Laws of Motion and Force</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Understand Newton's Laws of Motion, types of forces, and their applications in everyday life. Explore
+                    concepts like inertia, momentum, and friction.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+
+        <!-- Class 9 Science Chapter Overviews (Placeholders) -->
+        <div id="chapter-9-2" class="section">
+            <h2>Work, Power and Energy</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-9-3" class="section">
+            <h2>Current Electricity and Magnetism</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-9-4" class="section">
+            <h2>Measurement and Experimentation</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-9-5" class="section">
+            <h2>Light and Sound</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-9-6" class="section">
+            <h2>Properties of Substances</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-9-7" class="section">
+            <h2>Substances in Daily Life</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-9-8" class="section">
+            <h2>Life Processes in Living Organisms - Part 1</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-9-9" class="section">
+            <h2>Life Processes in Living Organisms - Part 2</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-9-10" class="section">
+            <h2>Heredity and Variation</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-9-11" class="section">
+            <h2>Introduction to Environment</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-9-12" class="section">
+            <h2>Observation in Daily Life</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-9-13" class="section">
+            <h2>Information Communication Technology</h2>
+            <button class="back-btn" data-section="class-9-science">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+
+        <!-- Class 10 Science Part 1 Chapter Overviews -->
+        <div id="chapter-10-part1-1" class="section">
+            <h2>Gravitation</h2>
+            <button class="back-btn" data-section="class-10-science-part1">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-10-part1-2" class="section">
+            <h2>Periodic Classification of Elements</h2>
+            <button class="back-btn" data-section="class-10-science-part1">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-10-part1-3" class="section">
+            <h2>Chemical Reactions and Equations</h2>
+            <button class="back-btn" data-section="class-10-science-part1">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-10-part1-4" class="section">
+            <h2>Effects of Electric Current</h2>
+            <button class="back-btn" data-section="class-10-science-part1">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-10-part1-5" class="section">
+            <h2>Heat</h2>
+            <button class="back-btn" data-section="class-10-science-part1">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+
+        <!-- Class 10 Science Part 2 Chapter Overviews -->
+        <div id="chapter-10-part2-1" class="section">
+            <h2>Heredity and Evolution</h2>
+            <button class="back-btn" data-section="class-10-science-part2">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-10-part2-2" class="section">
+            <h2>Life Processes</h2>
+            <button class="back-btn" data-section="class-10-science-part2">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-10-part2-3" class="section">
+            <h2>Natural Phenomena</h2>
+            <button class="back-btn" data-section="class-10-science-part2">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-10-part2-4" class="section">
+            <h2>Environmental Management</h2>
+            <button class="back-btn" data-section="class-10-science-part2">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-10-part2-5" class="section">
+            <h2>Metals</h2>
+            <button class="back-btn" data-section="class-10-science-part2">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-10-part2-6" class="section">
+            <h2>Carbon Compounds</h2>
+            <button class="back-btn" data-section="class-10-science-part2">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+
+        <!-- Class 11 Chemistry Chapter Overviews -->
+        <div id="chapter-11-chem-1" class="section">
+            <h2>Some Basic Concepts of Chemistry</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-2" class="section">
+            <h2>Structure of Atom</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-3" class="section">
+            <h2>Classification of Elements and Periodicity in Properties</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-4" class="section">
+            <h2>Chemical Bonding and Molecular Structure</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-5" class="section">
+            <h2>States of Matter</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-6" class="section">
+            <h2>Thermodynamics</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-7" class="section">
+            <h2>Equilibrium</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-8" class="section">
+            <h2>Redox Reactions</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-9" class="section">
+            <h2>Hydrogen</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-10" class="section">
+            <h2>s-Block Elements</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-11" class="section">
+            <h2>p-Block Elements</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-12" class="section">
+            <h2>Organic Chemistry: Some Basic Principles and Techniques</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-13" class="section">
+            <h2>Hydrocarbons</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-chem-14" class="section">
+            <h2>Environmental Chemistry</h2>
+            <button class="back-btn" data-section="class-11-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+
+        <!-- Class 11 Biology Chapter Overviews -->
+        <div id="chapter-11-bio-1" class="section">
+            <h2>The Living World</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-2" class="section">
+            <h2>Biological Classification</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-3" class="section">
+            <h2>Plant Kingdom</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-4" class="section">
+            <h2>Animal Kingdom</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-5" class="section">
+            <h2>Morphology of Flowering Plants</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-6" class="section">
+            <h2>Anatomy of Flowering Plants</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-7" class="section">
+            <h2>Structural Organisation in Animals</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-8" class="section">
+            <h2>Cell: The Unit of Life</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-9" class="section">
+            <h2>Biomolecules</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-10" class="section">
+            <h2>Cell Cycle and Cell Division</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-11" class="section">
+            <h2>Transport in Plants</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-12" class="section">
+            <h2>Mineral Nutrition</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-13" class="section">
+            <h2>Photosynthesis in Higher Plants</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-14" class="section">
+            <h2>Respiration in Plants</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-15" class="section">
+            <h2>Plant Growth and Development</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-16" class="section">
+            <h2>Digestion and Absorption</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-17" class="section">
+            <h2>Breathing and Exchange of Gases</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-18" class="section">
+            <h2>Body Fluids and Circulation</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-19" class="section">
+            <h2>Excretory Products and their Elimination</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-20" class="section">
+            <h2>Locomotion and Movement</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-21" class="section">
+            <h2>Neural Control and Coordination</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-11-bio-22" class="section">
+            <h2>Chemical Coordination and Integration</h2>
+            <button class="back-btn" data-section="class-11-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+
+        <!-- Class 12 Chemistry Chapter Overviews -->
+        <div id="chapter-12-chem-1" class="section">
+            <h2>Solid State</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-2" class="section">
+            <h2>Solutions</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-3" class="section">
+            <h2>Electrochemistry</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-4" class="section">
+            <h2>Chemical Kinetics</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-5" class="section">
+            <h2>Surface Chemistry</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-6" class="section">
+            <h2>General Principles and Processes of Isolation of Elements</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-7" class="section">
+            <h2>p-Block Elements</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-8" class="section">
+            <h2>d- and f-Block Elements</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-9" class="section">
+            <h2>Coordination Compounds</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-10" class="section">
+            <h2>Haloalkanes and Haloarenes</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-11" class="section">
+            <h2>Alcohols, Phenols, and Ethers</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-12" class="section">
+            <h2>Aldehydes, Ketones, and Carboxylic Acids</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-13" class="section">
+            <h2>Amines</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-14" class="section">
+            <h2>Biomolecules</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-15" class="section">
+            <h2>Polymers</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-chem-16" class="section">
+            <h2>Chemistry in Everyday Life</h2>
+            <button class="back-btn" data-section="class-12-chemistry">Back</button>
+            <div class="chapter-overview">
+                <h3>Content Coming Soon</h3>
+                <p>Detailed content for this chapter will be available soon. Stay tuned!</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+
+        <!-- Class 12 Biology Chapter Overviews -->
+        <div id="chapter-12-bio-1" class="section">
+            <h2>Reproduction in Lower and Higher Plants</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Explore the reproductive processes in plants, including asexual and sexual reproduction, pollination,
+                    fertilization, and seed formation. Understand the differences between lower and higher plants.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-2" class="section">
+            <h2>Reproduction in Lower and Higher Animals</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Learn about reproductive strategies in animals, from simple organisms to complex vertebrates. Study
+                    asexual and sexual reproduction, reproductive organs, and embryonic development.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-3" class="section">
+            <h2>Inheritance and Variation</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Understand the principles of genetics, Mendel's laws, patterns of inheritance, and causes of genetic
+                    variation. Explore concepts like dominance, co-dominance, and linkage.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-4" class="section">
+            <h2>Molecular Basis of Inheritance</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Dive into the molecular mechanisms of heredity, including DNA structure, replication, transcription,
+                    translation, and gene regulation. Study the role of RNA and genetic code.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-5" class="section">
+            <h2>Origin and Evolution of Life</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Explore the theories of the origin of life and the processes of evolution. Learn about natural
+                    selection, speciation, and evidence of evolution through fossils and molecular biology.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-6" class="section">
+            <h2>Plant Water Relation</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Study how plants absorb, transport, and utilize water. Understand osmosis, transpiration, and the
+                    role of xylem in water movement.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-7" class="section">
+            <h2>Plant Growth and Mineral Nutrition</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Learn about plant growth phases, hormones, and the role of essential minerals in plant nutrition.
+                    Explore deficiency symptoms and nutrient uptake mechanisms.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-8" class="section">
+            <h2>Respiration and Circulation</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Understand the processes of respiration and circulation in plants and animals. Study cellular
+                    respiration, glycolysis, and the circulatory system in humans.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-9" class="section">
+            <h2>Control and Coordination</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Explore how organisms coordinate activities through nervous and endocrine systems. Study neurons,
+                    synapses, and hormonal regulation in humans.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-10" class="section">
+            <h2>Human Health and Diseases</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Learn about common diseases, their causes, prevention, and treatment. Study the immune system,
+                    infectious diseases, and lifestyle-related disorders.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-11" class="section">
+            <h2>Enhancement of Food Production</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Discover techniques to improve food production, including plant breeding, tissue culture, and animal
+                    husbandry. Explore sustainable agricultural practices.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-12" class="section">
+            <h2>Biotechnology</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Understand the principles of biotechnology, including genetic engineering, recombinant DNA
+                    technology, and their applications in medicine and agriculture.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-13" class="section">
+            <h2>Organisms and Populations</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Study the interactions between organisms and their environments. Learn about population dynamics,
+                    adaptations, and ecological relationships.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-14" class="section">
+            <h2>Ecosystems and Energy Flow</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Explore the structure and function of ecosystems. Understand energy flow, food chains, food webs, and
+                    nutrient cycles.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+        <div id="chapter-12-bio-15" class="section">
+            <h2>Biodiversity, Conservation and Environmental Issues</h2>
+            <button class="back-btn" data-section="class-12-biology">Back</button>
+            <div class="chapter-overview">
+                <h3>What You Will Learn</h3>
+                <p>Learn about biodiversity, its importance, threats, and conservation strategies. Study environmental
+                    issues like pollution, climate change, and sustainable development.</p>
+                <button class="join-btn" data-section="join">Join Now</button>
+            </div>
+        </div>
+
+        <!-- aboutsectionn -->
+        <div id="about" class="section about-section">
+            <h2>About Vision Institute of Science</h2>
+            <p>
+                Established in 2021 and located in Dharmabad, District Nanded, Maharashtra, Vision Institute of Science
+                (VIS) is dedicated to providing high-quality science education. We offer specialized coaching for
+                students of Class 9 & 10 (Science Foundation) and Class 11 & 12 (Biology & Chemistry), along with
+                targeted preparation for competitive exams like NEET.
+            </p>
+
+            <div class="sub-section">
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li>Expert faculty with 4+ years of teaching experience.</li>
+                    <li>Handwritten notes and personal mentorship.</li>
+                    <li>Result-oriented methodology to ensure academic excellence.</li>
+                    <li>Strong focus on conceptual clarity and problem-solving skills.</li>
+                    <li>Support for NEET preparation with extra Chemistry classes.</li>
+                </ul>
+            </div>
+
+            <div class="sub-section">
+                <h3>Director & Founder</h3>
+                <p>
+                    Mr. Mohammad Sultan, B.Sc. in Computer Science from Lal Bahadur Shastri Mahavidyalaya, Dharmabad.
+                    With over 4 years of teaching experience, he has successfully guided numerous students towards
+                    academic excellence and competitive exam success.
+                </p>
+            </div>
+
+            <div class="sub-section">
+                <h3>Our Vision</h3>
+                <p>
+                    To be the leading institute in science education by empowering students with knowledge, discipline,
+                    and confidence to excel in academics and life.
+                </p>
+            </div>
+
+            <div class="sub-section">
+                <h3>Our Mission</h3>
+                <p>
+                    To provide top-quality education through innovative teaching techniques, comprehensive notes, and a
+                    nurturing learning environment that prepares students for board exams and competitive challenges.
+                </p>
+            </div>
+
+            <div class="sub-section">
+                <h3>What We Provide</h3>
+                <ul>
+                    <li>Detailed handwritten notes for all subjects.</li>
+                    <li>Chapter-wise tests and regular assessments.</li>
+                    <li>Doubt-solving sessions and revision classes.</li>
+                    <li>Motivational guidance and personal attention.</li>
+                    <li>Interactive learning with real-life examples.</li>
+                    <li>Complete NEET Chemistry preparation with concept building.</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any query, feel free to reach out using the form below.</p>
+            <p>You can also connect via email at <strong>example@visinstitute.com</strong></p>
+
+            <div class="contact-box">
+                <form id="contact-form" action="https://formspree.io/f/xgvzyakv" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="mobile">Mobile No (Optional):</label>
+                    <input type="tel" id="mobile" name="mobile">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                    <p id="form-status" style="margin-top: 10px; color: #28a745;"></p>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- Join Section -->
+        <div id="join" class="section">
+            <h2>Join Vision Institute of Science</h2>
+            <form id="join-form" action="https://formspree.io/f/xgvzyakv" method="POST">
+                <label for="join-name">Name:</label>
+                <input type="text" id="join-name" name="name" required>
+
+                <label for="join-email">Email:</label>
+                <input type="email" id="join-email" name="email" required>
+
+                <label for="join-course">Course:</label>
+                <select id="join-course" name="course" required>
+                    <option value="">Select Course</option>
+                    <option value="neet-jee">NEET/JEE Organic Chemistry</option>
+                    <option value="class-11-12">Class 11 & 12 Chemistry & Biology</option>
+                    <option value="class-9-10">Class 9 & 10 Foundation of Science</option>
+                </select>
+
+                <button type="submit">Join Now</button>
+
+                <p class="payment-heading">We accept multiple payment options:</p>
+                <div class="payment-options">
+                    <span class="payment-text">Google Pay</span>
+                    <span class="payment-text">PhonePe</span>
+                    <span class="payment-text">Paytm</span>
+                    <span class="payment-text">Net Banking</span>
+                    <span class="payment-text">BHIM</span>
+                </div>
+
+                <p id="join-success" style="color: green; display: none; margin-top: 10px;">
+                    🎉 Thank you for joining! We’ll reach out to you shortly.
+                </p>
+            </form>
+        </div>
+
+        <div class="footer-links">
+            <a href="#" data-section="disclaimer" class="underline">Disclaimer</a>
+            <a href="#" data-section="privacy-policy" class="underline">Privacy Policy</a>
+            <div class="payment-wrapper">
+
+
+                <!-- Disclaimer Section -->
+                <div id="disclaimer" class="section">
+                    <h2>Disclaimer</h2>
+                    <button class="back-btn" data-section="join">Back</button>
+                    <p>The content provided by Vision Institute of Science is for educational purposes only. While we
+                        strive for
+                        accuracy, we do not guarantee the completeness or suitability of the information for any
+                        specific
+                        purpose.</p>
+                </div>
+
+                <!-- Privacy Policy Section -->
+                <div id="privacy-policy" class="section">
+                    <h2>Privacy Policy</h2>
+                    <button class="back-btn" data-section="join">Back</button>
+                    <p>We value your privacy at Vision Institute of Science. Personal information is used solely for
+                        communication and enrollment purposes and is not shared with third parties without consent.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Announcement Images -->
+            <div id="image-modal" class="modal">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <img id="modal-image" src="" alt="Full Image">
+            </div>
+
+            <footer>
+                <p>&copy; 2025 Vision Institute of Science. All rights reserved.</p>
+            </footer>
+
+            <div class="custom-cursor"></div>
+
+            <script src="script.js"></script>
+</body>
+
+</html>
