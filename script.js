@@ -1,6 +1,6 @@
 // Typing animation for welcome text
 function typeWriter() {
-    const text = "Welcome to Vision Institute of Science";
+    const text = "Welcome to Vision Institute";
     const speed = 100; // Typing speed in milliseconds
     let i = 0;
     const typingText = document.getElementById('typing-text');
