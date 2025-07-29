@@ -1,7 +1,7 @@
 // Typing animation for welcome text
 function typeWriter() {
     const text = "Welcome to Vision Institute";
-    const speed = 100; // Typing speed in milliseconds
+    const speed = 100;
     let i = 0;
     const typingText = document.getElementById('typing-text');
 
@@ -15,7 +15,7 @@ function typeWriter() {
                 typingText.textContent = "";
                 i = 0;
                 type();
-            }, 1000); // Pause before restarting
+            }, 1000);
         }
     }
     type();
@@ -51,7 +51,7 @@ function showAnnouncements() {
     announcementSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-// Event delegation for section navigation
+// Section navigation (event delegation)
 document.addEventListener('click', (event) => {
     const sectionLink = event.target.closest('[data-section]');
     if (sectionLink) {
@@ -66,7 +66,7 @@ document.querySelector('.hamburger').addEventListener('click', () => {
     document.querySelector('.nav-menu').classList.toggle('active');
 });
 
-// Theme toggle with persistence
+// Theme toggle with localStorage persistence
 document.getElementById('theme-toggle').addEventListener('click', (event) => {
     event.preventDefault();
     const body = document.body;
@@ -84,7 +84,7 @@ document.getElementById('theme-toggle').addEventListener('click', (event) => {
     }
 });
 
-// Load saved theme and start typing animation on page load
+// Load theme & typing animation on page load
 document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     const body = document.body;
@@ -98,11 +98,12 @@ document.addEventListener('DOMContentLoaded', () => {
         icon.classList.remove('fa-sun');
         icon.classList.add('fa-moon');
     }
+
     showSection('home');
-    typeWriter(); // Start typing animation
+    typeWriter();
 });
 
-// Modal for announcement images
+// Modal image preview for announcements
 function openModal(imageSrc) {
     const modal = document.getElementById('image-modal');
     const modalImage = document.getElementById('modal-image');
@@ -114,6 +115,7 @@ function closeModal() {
     document.getElementById('image-modal').style.display = 'none';
 }
 
+// Open modal on card click
 document.querySelectorAll('.ann-card').forEach(card => {
     card.addEventListener('click', () => {
         const imageSrc = card.getAttribute('data-image');
@@ -121,16 +123,16 @@ document.querySelectorAll('.ann-card').forEach(card => {
     });
 });
 
-// Close modal with Escape key
+// Escape key to close modal
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
         closeModal();
     }
 });
 
-// Ensure chapter list items are clickable
+// Clickable chapter list navigation
 document.querySelectorAll('.chapter-list li').forEach(item => {
-    item.addEventListener('click', (event) => {
+    item.addEventListener('click', () => {
         const sectionId = item.getAttribute('data-section');
         if (sectionId) {
             showSection(sectionId);
@@ -138,7 +140,7 @@ document.querySelectorAll('.chapter-list li').forEach(item => {
     });
 });
 
-// Form validation and Formspree submission for contact form
+// Contact form (Formspree submission)
 document.getElementById('contact-form').addEventListener('submit', async (event) => {
     event.preventDefault();
     const name = document.getElementById('name').value.trim();
@@ -170,37 +172,36 @@ document.getElementById('contact-form').addEventListener('submit', async (event)
     }
 });
 
-// Form validation for join form
-document.getElementById('join-form').addEventListener('submit', (event) => {
-    event.preventDefault();
+// Join form validation + submission
+document.getElementById('join-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
     const name = document.getElementById('join-name').value.trim();
     const email = document.getElementById('join-email').value.trim();
     const course = document.getElementById('join-course').value;
-
-    if (name && email && course) {
-        alert('Join request submitted successfully!');
-        event.target.reset();
-    } else {
-        alert('Please fill in all required fields.');
-    }
-}); document.getElementById('join-form').addEventListener('submit', async function (e) {
-    e.preventDefault();
-
     const form = e.target;
+
+    if (!name || !email || !course) {
+        alert('Please fill in all required fields.');
+        return;
+    }
+
     const formData = new FormData(form);
 
-    const response = await fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: {
-            Accept: 'application/json'
-        }
-    });
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
 
-    if (response.ok) {
-        document.getElementById('join-success').style.display = 'block';
-        form.reset();
-    } else {
-        alert('Something went wrong. Please try again later.');
+        if (response.ok) {
+            alert('Join request submitted successfully!');
+            form.reset();
+        } else {
+            alert('There was a problem submitting the join form. Please try again.');
+        }
+    } catch (error) {
+        alert('Something went wrong. Please check your internet connection and try again.');
     }
 });
